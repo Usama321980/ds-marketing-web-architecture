@@ -6,7 +6,7 @@ export default function Home({ params }: any) {
   const slug = params.slug.join('/');
   let components = [];
   
-  // PASS THAT SLUG TO THE API, AND COMPONENTS LIST.
+  // PASS THAT SLUG TO THE API, AND GET COMPONENTS LIST.
 
   if(slug === 'dynamic') {
     components = [
