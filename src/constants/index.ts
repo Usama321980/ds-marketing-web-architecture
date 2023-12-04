@@ -1,0 +1,1 @@
+export const FIRST_CONSTANT = "FIRST CONSTANT";
