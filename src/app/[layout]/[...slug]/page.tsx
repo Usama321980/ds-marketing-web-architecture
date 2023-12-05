@@ -8,6 +8,7 @@ export default function Home({ params }: any) {
   
   // PASS THAT SLUG TO THE API, AND GET COMPONENTS LIST.
 
+  // I'M USING THESE CONDITIONS TO SIMULATE MULTIPLE PAGES
   if(slug === 'dynamic') {
     components = [
       {  id: 'carousel', name: 'carousel', data: { heading: 'CAROUSEL', link: "/work/live" }},
