@@ -18,6 +18,7 @@ export default function Home({ params }: any) {
     components = [
       {  id: 'header', name: 'header', data: { heading: 'HEADER 1', link: "/work/dynamic" }},
       {  id: 'footer', name: 'footer', data: { heading: 'FOOTER 1', link: "" }},
+      {  id: 'footer', name: 'footer', data: { heading: 'FOOTER 1', link: "" }},
     ];
   }
   
