@@ -11,7 +11,7 @@ export default function Home({ params }: any) {
   // I'M USING THESE CONDITIONS TO SIMULATE MULTIPLE PAGES
   if(slug === 'dynamic') {
     components = [
-      {  id: 'carousel', name: 'carousel'},
+      {  id: 'carousel', name: 'carousel', data: { heading: 'CAROUSEL', link: "/work/live" }},
       {  id: 'footer', name: 'footer', data: { heading: 'FOOTER 1', link: "" }},
     ];
   } else {
@@ -26,7 +26,7 @@ export default function Home({ params }: any) {
     <main>
       {components.map((component) => {
         const Component = ComponentMapper[component.name];
-        return <Component key={component.id} data={{ ...component }} />;
+        return <Component key={component.id} data={component.data} />;
       })}
     </main>
   )
