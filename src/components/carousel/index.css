@@ -1,1 +1,17 @@
-/* PREFIX CSS */
+/* PREFIX CSS WITH BEM METHODOLOGY */
+/* EXAMPLE OF BEM CSS CLASSES */
+.button {
+  /* Styles for the button block */
+}
+
+.button--primary {
+  /* Styles for the primary button block */
+}
+
+.button__icon {
+  /* Styles for the icon element inside the button block */
+}
+
+.button__icon--small {
+  /* Styles for a small version of the button icon */
+}
