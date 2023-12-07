@@ -3,12 +3,24 @@ import { ComponentMapper } from "@/helpers";
 
 export default function Home({ params }: any) {
   
-  let components = [
-      {  id: 'header', name: 'header'},
-      {  id: 'footer', name: 'footer'},
-      {  id: 'carousel', name: 'carousel'},
+  const slug = params.slug.join('/');
+  let components = [];
+
+  // PASS THAT SLUG TO THE API, AND GET COMPONENTS LIST.
+
+  // I'M USING THESE CONDITIONS TO SIMULATE MULTIPLE PAGES
+  if(slug.includes('dynamic')) {
+    components = [
+      {  id: 'carousel', name: 'carousel' },
+      {  id: 'footer', name: 'footer' },
     ];
-  
+  } else {
+    components = [
+      {  id: 'header', name: 'header' },
+      {  id: 'footer', name: 'footer' }
+    ];
+  }
+
   return (
     <main>
       {components.map((component) => {

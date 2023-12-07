@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Carousel({ data }: ISampleType) {
   
   // GET COMPONENT DATA FROM API WITH COMPONENT UNIQUE KEY ( data.id )
-  const { heading, link } = { heading: 'COROUSEL 1', link: "/work/dynamic" };
+  const { heading, link } = { heading: 'COROUSEL 1', link: "/work/live" };
 
   return (
     <main>
