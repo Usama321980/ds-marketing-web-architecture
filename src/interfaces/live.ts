@@ -1,3 +1,4 @@
 export interface ISampleType {
-  title: string;
+  id: 'header',
+  name: 'header'
 }

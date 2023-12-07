@@ -4,16 +4,16 @@ import { ComponentMapper } from "@/helpers";
 export default function Home({ params }: any) {
   
   let components = [
-      {  id: 'header', name: 'header', data: { heading: 'HEADER 1', link: "/work/dynamic" }},
-      {  id: 'footer', name: 'footer', data: { heading: 'FOOTER 1', link: "" }},
-      {  id: 'footer', name: 'footer', data: { heading: 'FOOTER 1', link: "" }},
+      {  id: 'header', name: 'header'},
+      {  id: 'footer', name: 'footer'},
+      {  id: 'footer', name: 'footer'},
     ];
   
   return (
     <main>
       {components.map((component) => {
         const Component = ComponentMapper[component.name];
-        return <Component key={component.id} data={component.data} />;
+        return <Component key={component.id} data={{...component}} />;
       })}
     </main>
   )
