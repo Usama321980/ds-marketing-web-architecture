@@ -6,7 +6,7 @@ export default function Home({ params }: any) {
   let components = [
       {  id: 'header', name: 'header'},
       {  id: 'footer', name: 'footer'},
-      {  id: 'footer', name: 'footer'},
+      {  id: 'carousel', name: 'carousel'},
     ];
   
   return (
